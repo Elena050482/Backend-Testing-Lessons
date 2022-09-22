@@ -1,6 +1,5 @@
 package org.example.api;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,11 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ApiAddShoppingListRequest {
+public class Original {
 
-    public String item;
-    public String aisle;
-    public Boolean parse;
-
-
+    private double amount;
+    private String unit;
 }

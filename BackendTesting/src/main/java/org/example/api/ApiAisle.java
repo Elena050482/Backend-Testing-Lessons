@@ -6,15 +6,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ApiAddShoppingListRequest {
-
-    public String item;
-    public String aisle;
-    public Boolean parse;
-
+public class ApiAisle {
+    private String aisle;
+    private List<ApiItems> items;
 
 }
