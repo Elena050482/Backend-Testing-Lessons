@@ -1,5 +1,6 @@
 package org.example.builder;
 
+
 import com.geekbrains.db.dao.CategoriesMapper;
 import com.geekbrains.db.dao.ProductsMapper;
 import com.geekbrains.db.model.Categories;
@@ -36,6 +37,19 @@ public class Main {
             Products product = productsMapper.deleteByPrimaryKey(1368L);
             System.out.println(product);
         }
+=======
+import org.example.api.ApiAddShoppingResponse;
+import org.example.api.SpoonaccularService;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        SpoonaccularService spoonaccularService = new SpoonaccularService();
+        ApiAddShoppingResponse addItems = spoonaccularService.addShoppingList(
+                "1 bag oranges", "orange", true);
+        System.out.println(addItems);
+
 
     }
 
